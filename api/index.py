@@ -42,9 +42,5 @@ def webhook():
             add_hello_world(repo_name)
     return 'OK', 200
 
-@app.route('/', methods=['GET'])
-def index():
-    return 'Hello World!', 200
-
 if __name__ == '__main__':
     app.run()
