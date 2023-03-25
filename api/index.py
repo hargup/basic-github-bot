@@ -42,5 +42,13 @@ def webhook():
             add_hello_world(repo_name)
     return 'OK', 200
 
+@app.route('/', methods=['GET'])
+def home():
+    return 'Hello World!', 200
+
+@app.route('/about')
+def about():
+    return 'About'
+
 if __name__ == '__main__':
     app.run()
